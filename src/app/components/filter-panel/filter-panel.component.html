@@ -1,0 +1,19 @@
+<div class="filters">
+  <div class="filters__container">
+    <p-dropdown
+      [options]="sortOptions"
+      [(ngModel)]="sortOrder"
+      (onChange)="onSortCategories()"
+      placeholder="Сортировать"
+      class="mb-3 w-full">
+    </p-dropdown>
+
+    <p-inputNumber
+      [(ngModel)]="minValue"
+      (onInput)="onFilterCategories()"
+      placeholder="Min value"
+      class="w-full mb-3">
+    </p-inputNumber>
+  </div>
+</div>
+

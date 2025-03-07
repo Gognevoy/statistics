@@ -1,0 +1,26 @@
+<div class="card flex justify-center">
+  <p-toast/>
+  @if (showButton()) {
+    <p-fileupload
+      mode="basic"
+      name="file"
+      chooseIcon="pi pi-upload"
+      accept=".json"
+      [maxFileSize]="maxSize"
+      (onSelect)="onFileSelect($event)"
+      [auto]="true"
+      chooseLabel="Browse"/>
+  }
+  <app-modal [closable]="false">
+    <p>Please load the JSON file</p>
+    <p-fileupload
+      mode="basic"
+      name="file"
+      chooseIcon="pi pi-upload"
+      accept=".json"
+      [maxFileSize]="maxSize"
+      (onSelect)="onFileSelect($event)"
+      [auto]="true"
+      chooseLabel="Browse"/>
+  </app-modal>
+</div>
