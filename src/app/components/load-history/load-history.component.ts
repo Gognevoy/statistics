@@ -17,7 +17,6 @@ import * as DataActions from '../../store/data.actions';
     FormsModule
   ],
   templateUrl: './load-history.component.html',
-  styleUrl: './load-history.component.less'
 })
 export class LoadHistoryComponent implements OnInit {
   history: WritableSignal<HistoryLoad[]> = signal([]);
