@@ -1,0 +1,17 @@
+<p-menubar>
+  <app-uploader></app-uploader>
+</p-menubar>
+@if (hasData()) {
+<main class="main">
+  <p-panel header="Categories filter">
+    <app-filter-panel/>
+    <div class="main__diagrams">
+      <app-bar-chart/>
+      <app-pie-chart/>
+    </div>
+  </p-panel>
+  <p-panel header="History of Load" >
+    <app-load-history/>
+  </p-panel>
+</main>
+}
