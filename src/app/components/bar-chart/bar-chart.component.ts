@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, signal, ViewChild, WritableSignal} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import * as d3 from 'd3';
 import {selectFilteredData} from '../../store/data.selectors';
 import {Store} from '@ngrx/store';

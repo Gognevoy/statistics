@@ -7,18 +7,18 @@ export interface HistoryLoad {
   date: Date;
   data: Data[];
   fileName: string;
-};
+}
 
 export interface Data {
   category: string;
   value: number;
-};
+}
 
 export interface DataState {
   history: HistoryLoad[];
   selectedData: number;
   activeData?: Data[]
-};
+}
 
 export const initialState: DataState = {
   history: [],

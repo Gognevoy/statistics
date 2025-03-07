@@ -5,7 +5,6 @@ import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import { provideStore } from '@ngrx/store';
 import { dataReducer } from './store/data.reducer';
-import { provideEffects } from '@ngrx/effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [

@@ -46,9 +46,7 @@ describe('FilterPanelComponent', () => {
 
 
   it('should reset sortOrder and minValue when data is loaded', () => {
-    const mockHistory = mockData;
-
-    store.overrideSelector(selectData, mockHistory);
+    store.overrideSelector(selectData, mockData);
     fixture.detectChanges();
 
     expect(component.sortOrder()).toBe('asc');
